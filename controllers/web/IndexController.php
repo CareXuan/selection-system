@@ -10,9 +10,9 @@ namespace app\controllers\web;
 
 use yii\web\Controller;
 
-class TestLiuController extends Controller
+class IndexController extends Controller
 {
-  public function actionTest(){
-    return $this->render('test');
+  public function actionIndex(){
+    return $this->render('index');
   }
 }

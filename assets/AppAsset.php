@@ -20,30 +20,26 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
-        'css/demo.css',
-        'css/custom.css',
-        'css/style.css',
+        'modules/bootstrap/css/bootstrap.min.css',
         'modules/ionicons/css/ionicons.min.css',
         'modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css',
-        'modules/summernote/summernote-lite.css',
-        'modules/flag-icon-css/css/flag-icon.css',
+        'css/demo.css',
+        'css/style.css',
     ];
     public $js = [
       'modules/jquery.min.js',
       'modules/popper.js',
       'modules/tooltip.js',
+      'modules/bootstrap/js/bootstrap.min.js',
       'modules/nicescroll/jquery.nicescroll.min.js',
       'modules/scroll-up-bar/dist/scroll-up-bar.min.js',
       'js/sa-functions.js',
-      'modules/chart.min.js',
-      'modules/summernote/summernote-lite.js',
       'js/scripts.js',
       'js/custom.js',
-      'js/demo.js',
+      'js/demo.js'
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+//        'yii\web\YiiAsset',
+//        'yii\bootstrap\BootstrapAsset',
     ];
 }
