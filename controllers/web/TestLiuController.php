@@ -6,14 +6,13 @@
  * Time: 14:35
  */
 
-namespace app\controllers\system;
+namespace app\controllers\web;
 
-use yii\console\Controller;
+use yii\web\Controller;
 
 class TestLiuController extends Controller
 {
   public function actionTest(){
-//    return $this->render();
-    echo "test";
+    return $this->render('test');
   }
 }
