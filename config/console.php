@@ -25,7 +25,6 @@ $config = [
                 ],
             ],
         ],
-        'db' => $db,
     ],
     'params' => $params,
     /*
@@ -36,6 +35,11 @@ $config = [
     ],
     */
 ];
+
+$db = require __DIR__ . '/db.php';
+foreach ($db as $k => $v) {
+  $config['components'][$k] = $v;
+}
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment

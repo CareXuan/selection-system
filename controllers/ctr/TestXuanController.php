@@ -13,6 +13,8 @@ use yii\console\Controller;
 class TestXuanController extends Controller
 {
   public function actionTest(){
-    echo Yii::$app->basePath;
+    $db = Yii::$app->content_db;
+    $sql = "select * from test";
+    print_r($db->createCommand($sql)->queryAll());
   }
 }
