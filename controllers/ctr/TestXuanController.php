@@ -7,14 +7,17 @@
  */
 namespace app\controllers\ctr;
 
+use app\models\Test;
 use Yii;
 use yii\console\Controller;
 
 class TestXuanController extends Controller
 {
   public function actionTest(){
-    $db = Yii::$app->content_db;
-    $sql = "select * from test";
-    print_r($db->createCommand($sql)->queryAll());
+    $result = Test::find()
+      ->select("*")
+      ->asArray()
+      ->all();
+    print_r($result);
   }
 }
