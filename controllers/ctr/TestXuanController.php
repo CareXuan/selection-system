@@ -7,6 +7,7 @@
  */
 namespace app\controllers\ctr;
 
+use app\models\NavBar;
 use app\models\Test;
 use Yii;
 use yii\console\Controller;
@@ -14,10 +15,11 @@ use yii\console\Controller;
 class TestXuanController extends Controller
 {
   public function actionTest(){
-    $result = Test::find()
-      ->select("*")
-      ->asArray()
-      ->all();
-    print_r($result);
+      $arr = NavBar::find()->where(['p_id' => 0])->asArray()->all();
+      print_r($arr);
+  }
+
+  public function actionDb(){
+      print_r(NavBar::find()->where(['p_id' => 0])->asArray()->all());
   }
 }

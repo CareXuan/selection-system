@@ -13,5 +13,7 @@ return [
     'index' => 'web/index/index',
     'test' => 'web/index/test',
     'best-class/ranking' => 'web/best-class/ranking',
+    'privilege-management/index' => 'web/privilege-management/index',
+    'privilege-management/add' => 'web/privilege-management/add',
   ]
 ];

@@ -31,3 +31,7 @@ tests/_support/_generated
 
 #vagrant folder
 /.vagrant
+
+# local cache
+/runtime/debug
+/runtime/cache
