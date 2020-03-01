@@ -13,7 +13,7 @@
                                 <tr>
                                     <td>一级标签名</td>
                                     <td>
-                                        <select class="form-control" name="first_tag">
+                                        <select id="first_tag" class="form-control" name="first_tag">
                                             <option value="0">all</option>
                                             <?php
                                             foreach ($data as $val){
@@ -49,9 +49,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    $(document).ready(function () {
-        $('')
-    })
-</script>

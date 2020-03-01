@@ -4555,3 +4555,1950 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1582799448.1745
     'REQUEST_TIME' => 1582799448
 ]
+2020-02-29 04:21:40 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "best-class/necessary". in /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('best-class/nece...', Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-02-29 04:21:40 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62620'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582950100.4587
+    'REQUEST_TIME' => 1582950100
+]
+2020-02-29 11:48:34 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: data in /mnt/d/selection-system/views/web/best-class/necessary.php:56
+Stack trace:
+#0 /mnt/d/selection-system/views/web/best-class/necessary.php(56): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/mnt/d/selectio...', 56, Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/d/selectio...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\BestClassController))
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('necessary', Array, Object(app\controllers\web\BestClassController))
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(21): yii\base\Controller->render('necessary', Array)
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-02-29 11:48:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50221'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582976914.8381
+    'REQUEST_TIME' => 1582976914
+]
+2020-02-29 12:20:14 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: error_cnt in /mnt/d/selection-system/views/web/best-class/necessary.php:52
+Stack trace:
+#0 /mnt/d/selection-system/views/web/best-class/necessary.php(52): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 52, Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/d/selectio...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\BestClassController))
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('necessary', Array, Object(app\controllers\web\BestClassController))
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(33): yii\base\Controller->render('necessary', Array)
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-02-29 12:20:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52714'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582978814.1265
+    'REQUEST_TIME' => 1582978814
+]
+2020-02-29 12:20:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: avg_super_grade in /mnt/d/selection-system/views/web/best-class/necessary.php:55
+Stack trace:
+#0 /mnt/d/selection-system/views/web/best-class/necessary.php(55): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 55, Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/d/selectio...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\BestClassController))
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('necessary', Array, Object(app\controllers\web\BestClassController))
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(33): yii\base\Controller->render('necessary', Array)
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-02-29 12:20:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52714'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582978838.9107
+    'REQUEST_TIME' => 1582978838
+]
+2020-02-29 12:21:20 [127.0.0.1][-][-][error][Error] Error: Call to undefined function int() in /mnt/d/selection-system/views/web/best-class/necessary.php:51
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\BestClassController))
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('necessary', Array, Object(app\controllers\web\BestClassController))
+#4 /mnt/d/selection-system/controllers/web/BestClassController.php(33): yii\base\Controller->render('necessary', Array)
+#5 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2020-02-29 12:21:20 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52714'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582978880.7043
+    'REQUEST_TIME' => 1582978880
+]
+2020-02-29 12:33:14 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'xuan.best_class_necessary.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(35): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'xuan.best_class_necessary.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+The SQL being executed was: SELECT * FROM `best_class_necessary` GROUP BY `grade`, `major`, `class` in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(35): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1055
+    [2] => Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'xuan.best_class_necessary.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+)
+
+2020-02-29 12:33:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53816'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582979594.7645
+    'REQUEST_TIME' => 1582979594
+]
+2020-02-29 12:34:14 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major)，distinct(class) FROM `best_class_necessary` GROUP BY `grade`, ' at line 1 in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT distinct...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(36): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major)，distinct(class) FROM `best_class_necessary` GROUP BY `grade`, ' at line 1
+The SQL being executed was: SELECT distinct(grade), distinct(major)，distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `major`, `class` in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT distinct...')
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT distinct...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(36): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major)，distinct(class) FROM `best_class_necessary` GROUP BY `grade`, ' at line 1
+)
+
+2020-02-29 12:34:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53816'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582979654.6547
+    'REQUEST_TIME' => 1582979654
+]
+2020-02-29 12:34:49 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `' at line 1 in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT distinct...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(36): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `' at line 1
+The SQL being executed was: SELECT distinct(grade), distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `major`, `class` in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT distinct...')
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT distinct...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(36): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `' at line 1
+)
+
+2020-02-29 12:34:49 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53816'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582979689.0635
+    'REQUEST_TIME' => 1582979689
+]
+2020-02-29 12:35:17 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `' at line 1 in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT distinct...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(36): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `' at line 1
+The SQL being executed was: SELECT distinct(grade), distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `major`, `class` in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT distinct...')
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT distinct...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(36): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct(major), distinct(class) FROM `best_class_necessary` GROUP BY `grade`, `' at line 1
+)
+
+2020-02-29 12:35:17 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53816'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582979717.9348
+    'REQUEST_TIME' => 1582979717
+]
+2020-02-29 12:39:09 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: in_array() expects parameter 2 to be array, string given in /mnt/d/selection-system/controllers/web/BestClassController.php:44
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'in_array() expe...', '/mnt/d/selectio...', 44, Array)
+#1 /mnt/d/selection-system/controllers/web/BestClassController.php(44): in_array(Array, '2016')
+#2 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-02-29 12:39:09 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54233'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582979949.7111
+    'REQUEST_TIME' => 1582979949
+]
+2020-02-29 12:44:30 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column '计算机技术与科学' in 'where clause' in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(35): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column '计算机技术与科学' in 'where clause'
+The SQL being executed was: SELECT * FROM `best_class_necessary` WHERE (2016) AND (计算机技术与科学) AND (1602) in /mnt/d/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /mnt/d/selection-system/controllers/web/BestClassController.php(35): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '计算机技术与科学' in 'where clause'
+)
+
+2020-02-29 12:44:30 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'grade' => '2016'
+    'major' => '计算机技术与科学'
+    'class' => '1602'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/best-class/necessary'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54686'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '100'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582980270.8323
+    'REQUEST_TIME' => 1582980270
+]
+2020-02-29 12:48:35 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: return_first in /mnt/d/selection-system/views/web/privilege-management/add.php:55
+Stack trace:
+#0 /mnt/d/selection-system/views/web/privilege-management/add.php(55): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/mnt/d/selectio...', 55, Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/d/selectio...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\PrivilegeManagementController))
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('add', Array, Object(app\controllers\web\PrivilegeManagementController))
+#5 /mnt/d/selection-system/controllers/web/PrivilegeManagementController.php(64): yii\base\Controller->render('add', Array)
+#6 [internal function]: app\controllers\web\PrivilegeManagementController->actionAdd()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('add', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/privilege-m...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-02-29 12:48:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54986'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/privilege-management/add?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582980515.4412
+    'REQUEST_TIME' => 1582980515
+]
+2020-02-29 12:52:00 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '}', expecting ',' or ';' in /mnt/d/selection-system/views/web/best-class/necessary.php:16
+Stack trace:
+#0 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\BestClassController))
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('necessary', Array, Object(app\controllers\web\BestClassController))
+#3 /mnt/d/selection-system/controllers/web/BestClassController.php(76): yii\base\Controller->render('necessary', Array)
+#4 [internal function]: app\controllers\web\BestClassController->actionNecessary()
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('necessary', Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/best-class/...', Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2020-02-29 12:52:00 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55237'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/best-class/necessary'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1582980720.7844
+    'REQUEST_TIME' => 1582980720
+]
+2020-03-01 09:39:26 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: all_data in /mnt/d/selection-system/views/web/message-add/character.php:22
+Stack trace:
+#0 /mnt/d/selection-system/views/web/message-add/character.php(22): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/mnt/d/selectio...', 22, Array)
+#1 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/d/selectio...')
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/d/selectio...', Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/d/selectio...', Array, Object(app\controllers\web\MessageAddController))
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->render('character', Array, Object(app\controllers\web\MessageAddController))
+#5 /mnt/d/selection-system/controllers/web/MessageAddController.php(13): yii\base\Controller->render('character')
+#6 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#10 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#11 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-03-01 09:39:26 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/add'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64712'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583055566.1902
+    'REQUEST_TIME' => 1583055566
+]
+2020-03-01 09:51:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: file in /mnt/d/selection-system/controllers/web/MessageAddController.php:14
+Stack trace:
+#0 /mnt/d/selection-system/controllers/web/MessageAddController.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 14, Array)
+#1 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2020-03-01 09:51:44 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'file' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49659'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '5'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583056304.2136
+    'REQUEST_TIME' => 1583056304
+]
+2020-03-01 09:51:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: file in /mnt/d/selection-system/controllers/web/MessageAddController.php:14
+Stack trace:
+#0 /mnt/d/selection-system/controllers/web/MessageAddController.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 14, Array)
+#1 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2020-03-01 09:51:48 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/privilege-management/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49659'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583056308.0387
+    'REQUEST_TIME' => 1583056308
+]
+2020-03-01 09:57:16 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(): Filename cannot be empty in /mnt/d/selection-system/controllers/web/MessageAddController.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', '/mnt/d/selectio...', 14, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(14): file_get_contents('')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 09:57:16 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => '简历-刘懿萱.pdf'
+        'type' => 'application/pdf'
+        'tmp_name' => '/tmp/phpxvnvlt'
+        'error' => 0
+        'size' => 353322
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDqcT15pZA7UBKWjr'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '353521'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50422'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '353521'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDqcT15pZA7UBKWjr'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583056636.8504
+    'REQUEST_TIME' => 1583056636
+]
+2020-03-01 10:56:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in /mnt/d/selection-system/controllers/web/MessageAddController.php:15
+Stack trace:
+#0 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 15, Array)
+#1 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2020-03-01 10:56:47 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => '简历-刘懿萱.pdf'
+        'type' => 'application/pdf'
+        'tmp_name' => '/tmp/phpjrOKDi'
+        'error' => 0
+        'size' => 353322
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryAr7XlPn8IEd79qsZ'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '353521'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56048'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '353521'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryAr7XlPn8IEd79qsZ'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583060207.2597
+    'REQUEST_TIME' => 1583060207
+]
+2020-03-01 10:56:57 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in /mnt/d/selection-system/controllers/web/MessageAddController.php:15
+Stack trace:
+#0 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 15, Array)
+#1 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2020-03-01 10:56:57 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => '简历-刘懿萱.pdf'
+        'type' => 'application/pdf'
+        'tmp_name' => '/tmp/phpdnnlW5'
+        'error' => 0
+        'size' => 353322
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBEf0l4ilZhb0pAoh'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '353521'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56048'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '353521'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBEf0l4ilZhb0pAoh'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583060217.054
+    'REQUEST_TIME' => 1583060217
+]
+2020-03-01 10:57:59 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in /mnt/d/selection-system/controllers/web/MessageAddController.php:15
+Stack trace:
+#0 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/mnt/d/selectio...', 15, Array)
+#1 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2020-03-01 10:57:59 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => 'aaa.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/phpzmFLZK'
+        'error' => 0
+        'size' => 22276
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryWA2e83f5MA7nVPON'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '22457'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56048'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '22457'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryWA2e83f5MA7nVPON'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583060279.7142
+    'REQUEST_TIME' => 1583060279
+]
+2020-03-01 10:58:29 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: move_uploaded_file(/tmp/upload/简历-刘懿萱.pdf): failed to open stream: No such file or directory in /mnt/d/selection-system/controllers/web/MessageAddController.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/mnt/d/selectio...', 15, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): move_uploaded_file('/tmp/phpxMECwd', '/tmp/upload/\xE7\xAE\x80...')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 10:58:29 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => '简历-刘懿萱.pdf'
+        'type' => 'application/pdf'
+        'tmp_name' => '/tmp/phpxMECwd'
+        'error' => 0
+        'size' => 353322
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryiHhLdCqjR36i0LFe'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '353521'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56048'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '353521'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryiHhLdCqjR36i0LFe'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583060309.1601
+    'REQUEST_TIME' => 1583060309
+]
+2020-03-01 10:59:53 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_put_contents(/tmp/upload/简历-刘懿萱.pdf): failed to open stream: No such file or directory in /mnt/d/selection-system/controllers/web/MessageAddController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_put_conten...', '/mnt/d/selectio...', 16, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(16): file_put_contents('/tmp/upload/\xE7\xAE\x80...', '/tmp/phpaC5nxZ')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 10:59:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => '简历-刘懿萱.pdf'
+        'type' => 'application/pdf'
+        'tmp_name' => '/tmp/phpaC5nxZ'
+        'error' => 0
+        'size' => 353322
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarybavXtcwbB0dReh1i'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '353521'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56406'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '353521'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarybavXtcwbB0dReh1i'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583060393.0073
+    'REQUEST_TIME' => 1583060393
+]
+2020-03-01 11:00:09 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_put_contents(/tmp/upload/aaa.jpg): failed to open stream: No such file or directory in /mnt/d/selection-system/controllers/web/MessageAddController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_put_conten...', '/mnt/d/selectio...', 16, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(16): file_put_contents('/tmp/upload/aaa...', '/tmp/php6EU9bU')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 11:00:09 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => 'aaa.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/php6EU9bU'
+        'error' => 0
+        'size' => 22276
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryVHTmpr0mPKVSBOvk'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '22457'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56406'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '22457'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryVHTmpr0mPKVSBOvk'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583060409.3559
+    'REQUEST_TIME' => 1583060409
+]
+2020-03-01 11:21:36 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Missing argument 2 for app\models\FileHelper::uploadByForm(), called in /mnt/d/selection-system/controllers/web/MessageAddController.php on line 15 and defined in /mnt/d/selection-system/models/FileHelper.php:11
+Stack trace:
+#0 /mnt/d/selection-system/models/FileHelper.php(11): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/mnt/d/selectio...', 11, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): app\models\FileHelper::uploadByForm('file')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 11:21:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => 'aaa.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/phpuz5BLW'
+        'error' => 0
+        'size' => 22276
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryCMuB2AakbrTgoKJF'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '22457'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58579'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '22457'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryCMuB2AakbrTgoKJF'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583061696.7694
+    'REQUEST_TIME' => 1583061696
+]
+2020-03-01 11:21:59 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Only variables should be passed by reference in /mnt/d/selection-system/models/FileHelper.php:15
+Stack trace:
+#0 /mnt/d/selection-system/models/FileHelper.php(15): yii\base\ErrorHandler->handleError(8, 'Only variables ...', '/mnt/d/selectio...', 15, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): app\models\FileHelper::uploadByForm('file', '')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 11:21:59 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => 'aaa.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/php0jTdri'
+        'error' => 0
+        'size' => 22276
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryMOvTc5pV481TztFx'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '22457'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58579'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '22457'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryMOvTc5pV481TztFx'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583061719.4173
+    'REQUEST_TIME' => 1583061719
+]
+2020-03-01 11:23:06 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Only variables should be passed by reference in /mnt/d/selection-system/models/FileHelper.php:15
+Stack trace:
+#0 /mnt/d/selection-system/models/FileHelper.php(15): yii\base\ErrorHandler->handleError(8, 'Only variables ...', '/mnt/d/selectio...', 15, Array)
+#1 /mnt/d/selection-system/controllers/web/MessageAddController.php(15): app\models\FileHelper::uploadByForm('file', '')
+#2 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#7 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-03-01 11:23:06 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => 'aaa.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/phpHnCiHo'
+        'error' => 0
+        'size' => 22276
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryOBPHCu6t4cJ8xWsS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '22457'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58818'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '22457'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryOBPHCu6t4cJ8xWsS'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583061786.6103
+    'REQUEST_TIME' => 1583061786
+]
+2020-03-01 11:35:23 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 1 in /mnt/d/selection-system/controllers/web/MessageAddController.php:22
+Stack trace:
+#0 /mnt/d/selection-system/controllers/web/MessageAddController.php(22): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/mnt/d/selectio...', 22, Array)
+#1 [internal function]: app\controllers\web\MessageAddController->actionCharacter()
+#2 /mnt/d/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#5 /mnt/d/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/message-add...', Array)
+#6 /mnt/d/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/d/selection-system/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2020-03-01 11:35:23 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = [
+    'file' => [
+        'name' => 'aaa.csv'
+        'type' => 'application/vnd.ms-excel'
+        'tmp_name' => '/tmp/phpiDWmkW'
+        'error' => 0
+        'size' => 30
+    ]
+]
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:12/message-add/character'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryeuR4tysXQ4wZvUuR'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:12'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '225'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:12'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'example.com'
+    'SERVER_PORT' => '12'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60059'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/d/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/message-add/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '225'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryeuR4tysXQ4wZvUuR'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/d/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1583062523.2654
+    'REQUEST_TIME' => 1583062523
+]
