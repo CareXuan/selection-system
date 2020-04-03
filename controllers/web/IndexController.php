@@ -10,7 +10,7 @@ namespace app\controllers\web;
 
 use yii\web\Controller;
 
-class IndexController extends Controller
+class IndexController extends BaseController
 {
   public function actionIndex(){
     return $this->render('index');

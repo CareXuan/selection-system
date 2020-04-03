@@ -20,8 +20,25 @@ return [
     //导航栏管理
     'privilege-management/index' => 'web/privilege-management/index',
     'privilege-management/add' => 'web/privilege-management/add',
+    'privilege-management/role' => 'web/privilege-management/role',
+    'privilege-management/add-role' => 'web/privilege-management/add-role',
+    'privilege-management/del-role' => 'web/privilege-management/del-role',
+    'privilege-management/user' => 'web/privilege-management/user',
+    'privilege-management/add-user' => 'web/privilege-management/add-user',
+    'privilege-management/del-user' => 'web/privilege-management/del-user',
 
     //信息导入
     'message-add/character' => 'web/message-add/character',
+
+    //登录相关
+    'user/login' => 'web/user/login',
+    'user/logout' => 'web/user/logout',
+
+    //加分申请
+    'add-apply/character' => 'web/add-apply/character',
+
+    //申请审核
+    'add-check/unaudited' => 'web/add-check/unaudited',
+    'add-check/check' => 'web/add-check/check',
   ]
 ];

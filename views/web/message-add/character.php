@@ -8,6 +8,7 @@
                 <div class="card-body">
                     <div class="table-responsive">
                         <form action="" method="POST" enctype="multipart/form-data">
+                            <p><?php echo $file_return_msg;?></p>
                             <table class="table table-striped" style="text-align: center;">
                                 <tr>
                                     <th colspan="2">文件导入</th>
@@ -18,22 +19,33 @@
                                 </tr>
                             </table>
                         </form>
-                        <table class="table table-striped" style="text-align: center;">
-                            <tr>
-                                <th colspan="2">手动输入</th>
-                            </tr>
-                            <tr>
-                                <td>姓名</td>
-                                <td><input type="text" class="form-control"></td>
-                            </tr>
-                            <tr>
-                                <td>德育基础分</td>
-                                <td><input type="text" class="form-control"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><button type="submit" class="btn btn-success">录入</button></td>
-                            </tr>
-                        </table>
+                        <form action="" method="POST">
+                            <p><?php echo $manually_return_msg;?></p>
+                            <table class="table table-striped" style="text-align: center;">
+                                <tr>
+                                    <th colspan="2">手动输入</th>
+                                </tr>
+                                <tr>
+                                    <td>学号</td>
+                                    <td><input type="text" class="form-control" name="number"></td>
+                                </tr>
+                                <tr>
+                                    <td>班级</td>
+                                    <td><input type="text" class="form-control" name="class"></td>
+                                </tr>
+                                <tr>
+                                    <td>姓名</td>
+                                    <td><input type="text" class="form-control" name="name"></td>
+                                </tr>
+                                <tr>
+                                    <td>德育基础分</td>
+                                    <td><input type="text" class="form-control" name="basic"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><button type="submit" class="btn btn-success">录入</button></td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,18 @@
 <?php
 use app\models\NavBar;
+use app\models\User;
+use app\models\Role;
 
 $arr = NavBar::find()->where(['p_id' => 0])->asArray()->all();
+$user_name = empty($_COOKIE['user_name'])?'请先登录':$_COOKIE['user_name'];
+
+if ($user_name != '请先登录'){
+    $user = User::getByUserName($user_name);
+    $role_id = $user->role_id;
+    $role_name = Role::getById($role_id)->role_name;
+}else{
+    $role_name = '';
+}
 
 ?>
 <div class="main-sidebar">
@@ -13,9 +24,9 @@ $arr = NavBar::find()->where(['p_id' => 0])->asArray()->all();
             <div class="sidebar-user-picture">
             </div>
             <div class="sidebar-user-details" style="text-align: center;">
-                <div class="user-name">刘懿萱</div>
+                <div class="user-name"><?php echo $user_name; ?></div>
                 <div class="user-role">
-                    管理员
+                    <?php echo $role_name;?>
                 </div>
             </div>
         </div>
