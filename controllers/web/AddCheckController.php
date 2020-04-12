@@ -9,9 +9,9 @@ use yii\web\Controller;
 
 class AddCheckController extends Controller
 {
-    //德育加分申请
+    //待审核
     public function actionUnaudited(){
-        $data = GradeAdd::find()->asArray()->all();
+        $data = GradeAdd::find()->where(['=','status',0])->asArray()->all();
         $class_arr = [
             1 => '德育',
             2 => '智育',
@@ -25,7 +25,23 @@ class AddCheckController extends Controller
         return $this->render('unaudited',$out);
     }
 
-    //德育加分审核
+    //已审核
+    public function actionAudited(){
+        $data = GradeAdd::find()->where(['in','status',[1,2]])->asArray()->all();
+        $class_arr = [
+            1 => '德育',
+            2 => '智育',
+            3 => '体育'
+        ];
+
+        $out = [
+            'data' => $data,
+            'class_arr' => $class_arr,
+        ];
+        return $this->render('audited',$out);
+    }
+
+    //审核
     public function actionCheck(){
         $id = Yii::$app->request->get('id');
         $arr = GradeAdd::getById($id);
@@ -33,5 +49,17 @@ class AddCheckController extends Controller
             'data' => $arr,
         ];
         return $this->render('check',$out);
+    }
+
+    //德育加分状态
+    public function actionCheckStatus(){
+        $id = Yii::$app->request->get('id');
+        $status = Yii::$app->request->get('status');
+        $arr = GradeAdd::getById($id);
+        if (in_array($status,[1,2])){
+            $arr->status = $status;
+            $arr->save();
+        }
+        $this->redirect('/add-check/unaudited');
     }
 }

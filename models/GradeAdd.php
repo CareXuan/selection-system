@@ -19,6 +19,6 @@ class GradeAdd extends ActiveRecord
     }
 
     public static function getById($id){
-        return self::find()->where(['id' => $id])->asArray()->one();
+        return self::find()->where(['id' => $id])->one();
     }
 }

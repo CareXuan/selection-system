@@ -11,7 +11,7 @@
                             <p><?php echo $msg;?></p>
                             <table class="table table-striped" style="text-align: center;">
                                 <tr>
-                                    <th colspan="2">德育加分申请</th>
+                                    <th colspan="2">加分申请</th>
                                 </tr>
                                 <tr>
                                     <td>申请者学号</td>
@@ -27,7 +27,16 @@
                                     <td>活动照片</td>
                                     <td><input type="file" class="form-control" name="pic"></td>
                                 </tr>
-                                <input type="hidden" value="1" name="class">
+                                <tr>
+                                    <td>加分类型</td>
+                                    <td>
+                                        <select class="form-control" name="class">
+                                            <option value="1">德育</option>
+                                            <option value="2">智育</option>
+                                            <option value="3">体育</option>
+                                        </select>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td colspan="2"><button type="submit" class="btn btn-success">申请</button></td>
                                 </tr>

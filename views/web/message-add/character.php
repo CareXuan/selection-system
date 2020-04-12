@@ -15,6 +15,7 @@
                                 </tr>
                                 <tr>
                                     <td><input type="file" class="form-control" name="file"></td>
+                                    <input type="hidden" name="hidden" value="1">
                                     <td><button type="submit" class="btn btn-success">导入</button></td>
                                 </tr>
                             </table>
@@ -41,6 +42,7 @@
                                     <td>德育基础分</td>
                                     <td><input type="text" class="form-control" name="basic"></td>
                                 </tr>
+                                <input type="hidden" name="hidden" value="1">
                                 <tr>
                                     <td colspan="2"><button type="submit" class="btn btn-success">录入</button></td>
                                 </tr>
