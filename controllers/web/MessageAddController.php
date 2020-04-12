@@ -18,7 +18,7 @@ class MessageAddController extends BaseController
         $class = Yii::$app->request->post('class','');
         $name = Yii::$app->request->post('name','');
         $basic = Yii::$app->request->post('basic','');
-        $hidden = Yii::$app->request->post('hidden');
+        $hidden = Yii::$app->request->post('status');
 
         //文件导入
         if (key_exists('file',$_FILES)){
