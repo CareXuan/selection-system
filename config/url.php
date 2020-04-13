@@ -36,9 +36,13 @@ return [
 
     //加分申请
     'add-apply/character' => 'web/add-apply/character',
+    'add-apply/intellectual' => 'web/add-apply/intellectual',
+    'add-apply/sports' => 'web/add-apply/sports',
 
     //申请审核
     'add-check/unaudited' => 'web/add-check/unaudited',
+    'add-check/audited' => 'web/add-check/audited',
     'add-check/check' => 'web/add-check/check',
+    'add-check/check-status' => 'web/add-check/check-status',
   ]
 ];

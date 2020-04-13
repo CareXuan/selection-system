@@ -18,6 +18,7 @@ class MessageAddController extends BaseController
         $class = Yii::$app->request->post('class','');
         $name = Yii::$app->request->post('name','');
         $basic = Yii::$app->request->post('basic','');
+        $hidden = Yii::$app->request->post('status');
 
         //文件导入
         if (key_exists('file',$_FILES)){
@@ -31,6 +32,7 @@ class MessageAddController extends BaseController
                     $test->b = $arr[1];
                     $test->c = $arr[2];
                     $test->d = $arr[3];
+                    $test->status = $hidden;
                     $test->save();
                 }
                 $file_return_msg = '导入成功';
@@ -46,6 +48,7 @@ class MessageAddController extends BaseController
             $test->b = $class;
             $test->c = $name;
             $test->d = $basic;
+            $test->status = $hidden;
             $result = $test->save();
             if ($result){
                 $manually_return_msg = '录入成功';

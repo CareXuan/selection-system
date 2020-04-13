@@ -9,7 +9,7 @@
                     <div class="table-responsive">
                             <table class="table table-striped" style="text-align: center;">
                                 <tr>
-                                    <th colspan="2">德育加分申请</th>
+                                    <th colspan="2">加分申请</th>
                                 </tr>
                                 <tr>
                                     <td>申请者学号</td>
@@ -25,11 +25,10 @@
                                     <td>活动照片</td>
                                     <td><img src="<?php echo str_replace('/var/www/html','http://localhost',$data['picture']);?>" style="width: 800px;height: 400px;"></td>
                                 </tr>
-                                <input type="hidden" value="1" name="class">
                                 <tr>
                                     <td colspan="2">
-                                        <a type="submit" style="color: white;" class="btn btn-success">通过</a>
-                                        <a type="submit" style="color: white;" class="btn btn-danger">拒绝</a>
+                                        <a type="submit" style="color: white;" href="/add-check/check-status?id=<?php echo $_GET['id'];?>&&status=1" class="btn btn-success">通过</a>
+                                        <a type="submit" style="color: white;" href="/add-check/check-status?id=<?php echo $_GET['id'];?>&&status=2" class="btn btn-danger">拒绝</a>
                                     </td>
                                 </tr>
                             </table>
