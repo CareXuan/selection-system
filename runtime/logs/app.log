@@ -16337,3 +16337,760 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1586251691.379
     'REQUEST_TIME' => 1586251691
 ]
+2020-04-07 09:32:40 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-04-07 09:32:40 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57904'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586251960.1331
+    'REQUEST_TIME' => 1586251960
+]
+2020-04-07 09:32:45 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'xuan' in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php:703
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(703): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(1020): yii\db\Connection->open()
+#3 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(1007): yii\db\Connection->getMasterPdo()
+#4 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(404): yii\db\Connection->getSlavePdo()
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(428): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(58): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/db/QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#10 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#11 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(854): yii\db\Schema->getQueryBuilder()
+#12 /mnt/f/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#13 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#14 /mnt/f/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#15 /mnt/f/selection-system/views/layouts/sidebar.php(6): yii\db\ActiveQuery->all()
+#16 /mnt/f/selection-system/views/layouts/main.php(32): require('/mnt/f/selectio...')
+#17 /mnt/f/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/f/selectio...')
+#18 /mnt/f/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/f/selectio...', '[<span class="s...')
+#19 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/mnt/f/selectio...', Array, Object(app\controllers\web\UserController))
+#20 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('<section class=...')
+#21 /mnt/f/selection-system/controllers/web/UserController.php(24): yii\base\Controller->render('login')
+#22 [internal function]: app\controllers\web\UserController->actionLogin()
+#23 /mnt/f/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#26 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#27 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'xuan' in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php:635
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(1020): yii\db\Connection->open()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(1007): yii\db\Connection->getMasterPdo()
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(404): yii\db\Connection->getSlavePdo()
+#3 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(428): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(58): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/db/QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/db/mysql/Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#9 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Connection.php(854): yii\db\Schema->getQueryBuilder()
+#10 /mnt/f/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#11 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Query.php(237): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#12 /mnt/f/selection-system/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#13 /mnt/f/selection-system/views/layouts/sidebar.php(6): yii\db\ActiveQuery->all()
+#14 /mnt/f/selection-system/views/layouts/main.php(32): require('/mnt/f/selectio...')
+#15 /mnt/f/selection-system/vendor/yiisoft/yii2/base/View.php(348): require('/mnt/f/selectio...')
+#16 /mnt/f/selection-system/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/mnt/f/selectio...', '[<span class="s...')
+#17 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/mnt/f/selectio...', Array, Object(app\controllers\web\UserController))
+#18 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('<section class=...')
+#19 /mnt/f/selection-system/controllers/web/UserController.php(24): yii\base\Controller->render('login')
+#20 [internal function]: app\controllers\web\UserController->actionLogin()
+#21 /mnt/f/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#24 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#25 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2020-04-07 09:32:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/index'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57904'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586251965.6851
+    'REQUEST_TIME' => 1586251965
+]
+2020-04-07 09:46:17 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php:1293
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1293): PDOStatement->execute()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(23): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/index/index', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist
+The SQL being executed was: select authority.role_id,nav_bar.href from authority JOIN nav_bar ON authority.nav_id=nav_bar.id where authority.role_id = 1 in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1298): yii\db\Schema->convertException(Object(PDOException), 'select authorit...')
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(23): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/index/index', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'xuan.authority' doesn't exist
+)
+
+2020-04-07 09:46:17 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/user/login'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58355'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252777.6963
+    'REQUEST_TIME' => 1586252777
+]
+2020-04-07 09:47:20 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php:1293
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1293): PDOStatement->execute()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/index/index', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist
+The SQL being executed was: select authority.role_id,nav_bar.href from authority JOIN nav_bar ON authority.nav_id=nav_bar.id where authority.role_id = 1 in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1298): yii\db\Schema->convertException(Object(PDOException), 'select authorit...')
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/index/index', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'xuan.authority' doesn't exist
+)
+
+2020-04-07 09:47:20 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/user/login'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58355'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252839.9971
+    'REQUEST_TIME' => 1586252839
+]
+2020-04-07 09:47:22 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php:1293
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1293): PDOStatement->execute()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist
+The SQL being executed was: select authority.role_id,nav_bar.href from authority JOIN nav_bar ON authority.nav_id=nav_bar.id where authority.role_id = 1 in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1298): yii\db\Schema->convertException(Object(PDOException), 'select authorit...')
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'xuan.authority' doesn't exist
+)
+
+2020-04-07 09:47:22 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58355'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252842.0766
+    'REQUEST_TIME' => 1586252842
+]
+2020-04-07 09:47:25 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php:1293
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1293): PDOStatement->execute()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist
+The SQL being executed was: select authority.role_id,nav_bar.href from authority JOIN nav_bar ON authority.nav_id=nav_bar.id where authority.role_id = 1 in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1298): yii\db\Schema->convertException(Object(PDOException), 'select authorit...')
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'xuan.authority' doesn't exist
+)
+
+2020-04-07 09:47:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/index'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58375'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252845.907
+    'REQUEST_TIME' => 1586252845
+]
+2020-04-07 09:47:31 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php:1293
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1293): PDOStatement->execute()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist
+The SQL being executed was: select authority.role_id,nav_bar.href from authority JOIN nav_bar ON authority.nav_id=nav_bar.id where authority.role_id = 1 in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1298): yii\db\Schema->convertException(Object(PDOException), 'select authorit...')
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'xuan.authority' doesn't exist
+)
+
+2020-04-07 09:47:31 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58375'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252851.3911
+    'REQUEST_TIME' => 1586252851
+]
+2020-04-07 09:47:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-04-07 09:47:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58380'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252858.7086
+    'REQUEST_TIME' => 1586252858
+]
+2020-04-07 09:47:45 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php:1293
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1293): PDOStatement->execute()
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xuan.authority' doesn't exist
+The SQL being executed was: select authority.role_id,nav_bar.href from authority JOIN nav_bar ON authority.nav_id=nav_bar.id where authority.role_id = 1 in /mnt/f/selection-system/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1298): yii\db\Schema->convertException(Object(PDOException), 'select authorit...')
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->internalExecute('select authorit...')
+#2 /mnt/f/selection-system/vendor/yiisoft/yii2/db/Command.php(401): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /mnt/f/selection-system/models/Admin.php(20): yii\db\Command->queryAll()
+#4 /mnt/f/selection-system/controllers/web/BaseController.php(24): app\models\Admin::checkAuthority('aaa')
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(155): app\controllers\web\BaseController->beforeAction(Object(yii\base\InlineAction))
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user/login', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'xuan.authority' doesn't exist
+)
+
+2020-04-07 09:47:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'selection.com'
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58380'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1586252865.6714
+    'REQUEST_TIME' => 1586252865
+]

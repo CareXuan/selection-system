@@ -13,6 +13,7 @@ class BaseController extends Controller
     {
         $ignore_list = [
             'login',
+            'index',
         ];
 
         if (!Admin::isLogin()){
