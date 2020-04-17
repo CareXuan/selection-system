@@ -36,8 +36,6 @@ return [
 
     //加分申请
     'add-apply/character' => 'web/add-apply/character',
-    'add-apply/intellectual' => 'web/add-apply/intellectual',
-    'add-apply/sports' => 'web/add-apply/sports',
 
     //申请审核
     'add-check/unaudited' => 'web/add-check/unaudited',

@@ -51,7 +51,7 @@ class AddCheckController extends Controller
         return $this->render('check',$out);
     }
 
-    //德育加分状态
+    //加分状态
     public function actionCheckStatus(){
         $id = Yii::$app->request->get('id');
         $status = Yii::$app->request->get('status');
