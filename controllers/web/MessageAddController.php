@@ -63,4 +63,8 @@ class MessageAddController extends BaseController
         ];
         return $this->render('character',$out);
     }
+
+    public function actionStudent(){
+        return $this->render("student");
+    }
 }

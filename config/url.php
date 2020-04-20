@@ -29,6 +29,7 @@ return [
 
     //信息导入
     'message-add/character' => 'web/message-add/character',
+    'message-add/student' => 'web/message-add/student',
 
     //登录相关
     'user/login' => 'web/user/login',
@@ -42,5 +43,10 @@ return [
     'add-check/audited' => 'web/add-check/audited',
     'add-check/check' => 'web/add-check/check',
     'add-check/check-status' => 'web/add-check/check-status',
+
+    //系统管理
+    'system-management/student-admin' => 'web/system-management/student-admin',
+    'system-management/class-admin' => 'web/system-management/class-admin',
+    'system-management/cadre-admin' => 'web/system-management/cadre-admin',
   ]
 ];
