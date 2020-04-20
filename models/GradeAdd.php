@@ -10,7 +10,7 @@ class GradeAdd extends ActiveRecord
 {
     public static function tableName()
     {
-        return 'grade-add';
+        return 'grade_add';
     }
 
     public static function getDb()
