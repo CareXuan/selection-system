@@ -30,6 +30,7 @@ return [
     //信息导入
     'message-add/character' => 'web/message-add/character',
     'message-add/student' => 'web/message-add/student',
+    'message-add/class' => 'web/message-add/class',
 
     //登录相关
     'user/login' => 'web/user/login',

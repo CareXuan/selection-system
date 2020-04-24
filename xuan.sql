@@ -11,7 +11,7 @@
  Target Server Version : 50729
  File Encoding         : 65001
 
- Date: 24/04/2020 12:47:56
+ Date: 24/04/2020 13:41:26
 */
 
 SET NAMES utf8mb4;
@@ -26,24 +26,25 @@ CREATE TABLE `authority`  (
   `role_id` int(11) NOT NULL,
   `nav_id` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 35 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 49 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of authority
 -- ----------------------------
-INSERT INTO `authority` VALUES (22, 1, 2);
-INSERT INTO `authority` VALUES (23, 1, 5);
-INSERT INTO `authority` VALUES (24, 1, 4);
-INSERT INTO `authority` VALUES (25, 1, 9);
-INSERT INTO `authority` VALUES (26, 1, 10);
-INSERT INTO `authority` VALUES (27, 1, 8);
-INSERT INTO `authority` VALUES (28, 1, 19);
-INSERT INTO `authority` VALUES (29, 1, 13);
-INSERT INTO `authority` VALUES (30, 1, 11);
-INSERT INTO `authority` VALUES (31, 1, 12);
-INSERT INTO `authority` VALUES (32, 1, 16);
-INSERT INTO `authority` VALUES (33, 1, 17);
-INSERT INTO `authority` VALUES (34, 1, 18);
+INSERT INTO `authority` VALUES (35, 1, 2);
+INSERT INTO `authority` VALUES (36, 1, 5);
+INSERT INTO `authority` VALUES (37, 1, 4);
+INSERT INTO `authority` VALUES (38, 1, 9);
+INSERT INTO `authority` VALUES (39, 1, 10);
+INSERT INTO `authority` VALUES (40, 1, 8);
+INSERT INTO `authority` VALUES (41, 1, 19);
+INSERT INTO `authority` VALUES (42, 1, 21);
+INSERT INTO `authority` VALUES (43, 1, 13);
+INSERT INTO `authority` VALUES (44, 1, 11);
+INSERT INTO `authority` VALUES (45, 1, 12);
+INSERT INTO `authority` VALUES (46, 1, 17);
+INSERT INTO `authority` VALUES (47, 1, 18);
+INSERT INTO `authority` VALUES (48, 1, 20);
 
 -- ----------------------------
 -- Table structure for bedroom
@@ -108,6 +109,25 @@ CREATE TABLE `class`  (
 INSERT INTO `class` VALUES (1, 'aa', 'J', 'bb', 'G', 'cc', 'H');
 
 -- ----------------------------
+-- Table structure for grade
+-- ----------------------------
+DROP TABLE IF EXISTS `grade`;
+CREATE TABLE `grade`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `stu_id` int(11) NULL DEFAULT NULL,
+  `class` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `basic` int(10) NOT NULL,
+  `status` tinyint(5) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of grade
+-- ----------------------------
+INSERT INTO `grade` VALUES (1, 161203311, '软工1603', '刘懿萱', 10, 1);
+
+-- ----------------------------
 -- Table structure for grade_add
 -- ----------------------------
 DROP TABLE IF EXISTS `grade_add`;
@@ -135,7 +155,7 @@ CREATE TABLE `nav_bar`  (
   `nav_bar_name` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '导航栏名称',
   `href` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'url链接',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of nav_bar
@@ -159,6 +179,7 @@ INSERT INTO `nav_bar` VALUES (17, 15, '学生信息管理', '/system-management/
 INSERT INTO `nav_bar` VALUES (18, 15, '班级信息管理', '/system-management/class-admin');
 INSERT INTO `nav_bar` VALUES (19, 6, '学生信息', '/message-add/student');
 INSERT INTO `nav_bar` VALUES (20, 15, '班级干部管理', '/system-management/cadre-admin');
+INSERT INTO `nav_bar` VALUES (21, 6, '班级信息', '/message-add/class');
 
 -- ----------------------------
 -- Table structure for role

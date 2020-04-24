@@ -6,10 +6,10 @@ namespace app\models;
 use Yii;
 use yii\db\ActiveRecord;
 
-class StuClass extends ActiveRecord
+class Grade extends ActiveRecord
 {
     public static function tableName() {
-        return 'class';
+        return 'grade';
     }
 
     public static function getDb() {
