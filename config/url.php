@@ -46,7 +46,11 @@ return [
 
     //系统管理
     'system-management/student-admin' => 'web/system-management/student-admin',
+    'system-management/student-admin-change' => 'web/system-management/student-admin-change',
+    'system-management/student-change' => 'web/system-management/student-change',
     'system-management/class-admin' => 'web/system-management/class-admin',
+    'system-management/class-admin-change' => 'web/system-management/class-admin-change',
+    'system-management/class-change' => 'web/system-management/class-change',
     'system-management/cadre-admin' => 'web/system-management/cadre-admin',
   ]
 ];

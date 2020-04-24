@@ -25,6 +25,7 @@
                                     <td><button type="submit" class="btn btn-success">导入</button></td>
                                 </tr>
                             </table>
+                            导入文件格式必须是csv格式，按照学号，班级，姓名，基础分排列，并选择类型进行导入
                         </form>
                         <form action="" method="POST">
                             <p><?php echo $manually_return_msg;?></p>

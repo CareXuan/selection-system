@@ -4,6 +4,7 @@
 namespace app\controllers\web;
 
 use app\models\FileHelper;
+use app\models\Student;
 use app\models\Test;
 use Yii;
 use yii\web\Controller;
@@ -65,6 +66,32 @@ class MessageAddController extends BaseController
     }
 
     public function actionStudent(){
-        return $this->render("student");
+        $file_return_msg = "";
+        if (key_exists('file',$_FILES)){
+            $file_name = FileHelper::uploadByForm('file',['csv']);
+            if ($file_name){
+                $content = FileHelper::getContent($file_name);
+                foreach ($content as $item){
+                    $arr = explode(',',$item);
+                    $student = new Student();
+                    $student->stu_id = $arr[0];
+                    $student->stu_name = $arr[1];
+                    $student->stu_sex = $arr[2];
+                    $student->stu_year = $arr[3];
+                    $student->class = $arr[4];
+                    $student->work = $arr[5];
+                    $student->stu_class = $arr[6];
+                    $student->bedroom = $arr[7];
+                    $student->save();
+                }
+                $file_return_msg = '导入成功';
+            }else{
+                $file_return_msg = '文件格式有误';
+            }
+        }
+        $out = [
+            'return_msg' => $file_return_msg,
+        ];
+        return $this->render("student",$out);
     }
 }
