@@ -14,44 +14,6 @@
     <div class="row mt-5">
         <div class="col-12">
             <div class="card">
-                <div class="card-header">
-                    <form action="/best-class/necessary" method="POST">
-                        <p style="float: left;margin-right: 10px; padding-top:8px;">年级</p>
-                        <select class="form-control" id="grade" name="grade" style="width: 200px;float: left;">
-                            <option value="">请选择年级</option>
-                            <?php
-                            foreach ($return_option['grade'] as $grade){
-                                ?>
-                                <option value="<?php echo $grade;?>" <?php if ($return_grade == $grade){echo 'selected="selected"';}?>><?php echo $grade;?></option>
-                                <?php
-                            }
-                            ?>
-                        </select>
-                        <p style="float: left;margin-right: 10px; margin-left: 10px; padding-top:8px;">专业</p>
-                        <select class="form-control" id="major" name="major" style="width: 200px;float: left;">
-                            <option value="">请选择专业</option>
-                            <?php
-                            foreach ($return_option['major'] as $major){
-                                ?>
-                                <option value="<?php echo $major;?>" <?php if ($return_major == $major){echo 'selected="selected"';}?>><?php echo $major;?></option>
-                                <?php
-                            }
-                            ?>
-                        </select>
-                        <p style="float: left;margin-right: 10px; margin-left: 10px; padding-top:8px;">班级</p>
-                        <select class="form-control" id="class" name="class" style="width: 200px;float: left;">
-                            <option value="">请选择班级</option>
-                            <?php
-                            foreach ($return_option['class'] as $class){
-                                ?>
-                                <option value="<?php echo $class;?>" <?php if ($return_class == $class){echo 'selected="selected"';}?>><?php echo $class;?></option>
-                                <?php
-                            }
-                            ?>
-                        </select>
-                        <button type="submit" class="btn btn-primary" style="margin-top: 8px;margin-left: 8px;">查询</button>
-                    </form>
-                </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-striped" style="text-align: center;">

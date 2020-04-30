@@ -11,7 +11,7 @@
  Target Server Version : 50729
  File Encoding         : 65001
 
- Date: 24/04/2020 13:41:26
+ Date: 30/04/2020 16:20:26
 */
 
 SET NAMES utf8mb4;
@@ -109,6 +109,23 @@ CREATE TABLE `class`  (
 INSERT INTO `class` VALUES (1, 'aa', 'J', 'bb', 'G', 'cc', 'H');
 
 -- ----------------------------
+-- Table structure for class_grade
+-- ----------------------------
+DROP TABLE IF EXISTS `class_grade`;
+CREATE TABLE `class_grade`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `zhuyekaoping` int(20) NULL DEFAULT NULL,
+  `youxiucishu` int(20) NULL DEFAULT NULL,
+  `huodongchengji` float NULL DEFAULT NULL,
+  `chuqinjiancha` float NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of class_grade
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for grade
 -- ----------------------------
 DROP TABLE IF EXISTS `grade`;
@@ -197,6 +214,27 @@ CREATE TABLE `role`  (
 -- ----------------------------
 INSERT INTO `role` VALUES (1, '管理员', 1);
 INSERT INTO `role` VALUES (2, '录入员', 1);
+
+-- ----------------------------
+-- Table structure for stu_grade
+-- ----------------------------
+DROP TABLE IF EXISTS `stu_grade`;
+CREATE TABLE `stu_grade`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `stu_id` int(50) NULL DEFAULT NULL,
+  `deyufenshu` float NULL DEFAULT NULL,
+  `zhiyufenshu` float NULL DEFAULT NULL,
+  `tiyufenshu` float NULL DEFAULT NULL,
+  `jidian` float NULL DEFAULT NULL,
+  `xuejichuli` int(20) NULL DEFAULT NULL,
+  `jilvchufen` int(20) NULL DEFAULT NULL,
+  `fujiafeng` float NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of stu_grade
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for student

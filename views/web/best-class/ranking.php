@@ -5,14 +5,6 @@
       <div class="row mt-5">
         <div class="col-12">
           <div class="card">
-            <div class="card-header">
-              <p style="float: left;margin-right: 10px; padding-top:8px;">年级</p>
-              <label for="grade"></label><select class="form-control" id="grade" name="grade" style="width: 200px;float: left;">
-                <option value="">2017级</option>
-                <option value="">2018级</option>
-              </select>
-              <button class="btn btn-primary" style="margin-top: 8px;margin-left: 8px;">查询</button>
-            </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped" style="text-align: center;">
