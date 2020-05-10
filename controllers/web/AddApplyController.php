@@ -8,7 +8,7 @@ use Yii;
 use app\models\FileHelper;
 use yii\web\Controller;
 
-class AddApplyController extends Controller
+class AddApplyController extends BaseController
 {
     //德育加分申请
     public function actionCharacter(){
