@@ -1480,3 +1480,254 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1587703631.0375
     'REQUEST_TIME' => 1587703631
 ]
+2020-05-13 01:24:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/demo.css.map". in /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/demo.css.ma...', Array)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-05-13 01:24:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => ''
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51059'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/css/demo.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1589333078.201
+    'REQUEST_TIME' => 1589333078
+]
+2020-05-13 01:24:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "modules/popper.min.js.map". in /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('modules/popper....', Array)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-05-13 01:24:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => ''
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51056'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/modules/popper.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1589333078.4095
+    'REQUEST_TIME' => 1589333078
+]
+2020-05-13 01:24:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "modules/tooltip.min.js.map". in /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('modules/tooltip...', Array)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-05-13 01:24:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => ''
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51069'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/modules/tooltip.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1589333078.4831
+    'REQUEST_TIME' => 1589333078
+]
+2020-05-13 01:25:00 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: mkdir(): Permission denied in /mnt/f/selection-system/models/FileHelper.php:19
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mkdir(): Permis...', '/mnt/f/selectio...', 19, Array)
+#1 /mnt/f/selection-system/models/FileHelper.php(19): mkdir('/var/www/html/c...')
+#2 /mnt/f/selection-system/controllers/web/AddApplyController.php(24): app\models\FileHelper::uploadByForm('pic', Array, '/var/www/html/c...')
+#3 [internal function]: app\controllers\web\AddApplyController->actionCharacter()
+#4 /mnt/f/selection-system/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('character', Array)
+#7 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/add-apply/c...', Array)
+#8 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2020-05-13 01:25:00 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'number' => '16120331'
+    'reason' => '123'
+    'class' => '1'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => 'QQ截图20200513091611.png'
+        'type' => 'image/png'
+        'tmp_name' => '/tmp/php0Gqbfc'
+        'error' => 0
+        'size' => 3225
+    ]
+]
+
+$_COOKIE = [
+    'user_name' => 'aaa'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/add-apply/character'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarykds8cpbk6TDRZR04'
+    'HTTP_ORIGIN' => 'http://localhost:759'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '3713'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => ''
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51057'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/add-apply/character'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '3713'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarykds8cpbk6TDRZR04'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1589333100.6549
+    'REQUEST_TIME' => 1589333100
+]

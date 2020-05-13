@@ -31,6 +31,7 @@ class AddApplyController extends Controller
             $grade_add->reason = $reason;
             $grade_add->picture = $pic_online;
             $grade_add->class = $class;
+            $grade_add->status = 0;
             $result = $grade_add->save();
             if ($result){
                 $msg = '申请成功';
