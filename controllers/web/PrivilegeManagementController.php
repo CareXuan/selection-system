@@ -10,7 +10,7 @@ use Yii;
 use app\models\NavBar;
 use yii\web\Controller;
 
-class PrivilegeManagementController extends Controller
+class PrivilegeManagementController extends BaseController
 {
     public function actionIndex(){
         $all_data = NavBar::find()->asArray()->all();

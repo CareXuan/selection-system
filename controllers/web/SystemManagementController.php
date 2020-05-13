@@ -8,7 +8,7 @@ use app\models\Student;
 use Yii;
 use yii\web\Controller;
 
-class SystemManagementController extends Controller
+class SystemManagementController extends BaseController
 {
     public function actionStudentAdmin(){
         $result = Student::find()->asArray()->all();

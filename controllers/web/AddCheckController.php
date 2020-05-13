@@ -7,7 +7,7 @@ use Yii;
 use app\models\GradeAdd;
 use yii\web\Controller;
 
-class AddCheckController extends Controller
+class AddCheckController extends BaseController
 {
     //待审核
     public function actionUnaudited(){
