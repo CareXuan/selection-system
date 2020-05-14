@@ -42,7 +42,7 @@ class MessageAddController extends BaseController
         $intellectual->year = $year;
         $intellectual->headgrade = $intellectual_headgrade;
         $intellectual->basic = $intellectual_basic;
-        $sport->type = 1;
+        $sport->type = 3;
         $sport->year = $year;
         $sport->headgrade = $sport_headgrade;
         $sport->basic = $sport_basic;

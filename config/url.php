@@ -57,5 +57,8 @@ return [
     'system-management/class-admin-change' => 'web/system-management/class-admin-change',
     'system-management/class-change' => 'web/system-management/class-change',
     'system-management/cadre-admin' => 'web/system-management/cadre-admin',
+
+    //分数计算
+    'calculation/dzt' => 'web/calculation/dzt',
   ]
 ];
