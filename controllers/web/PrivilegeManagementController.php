@@ -26,15 +26,9 @@ class PrivilegeManagementController extends BaseController
         $params['url'] = Yii::$app->request->post('url');
         $params['nav_bar_id'] = Yii::$app->request->get('id',0);
         $params['check'] = Yii::$app->request->post('check',0);
-        $return_first = 0;
-        $return_second = '';
-        $return_url = '';
 
         if ($params['nav_bar_id']){
             $nav_bar = NavBar::getById($params['nav_bar_id']);
-            $return_first = $nav_bar->p_id;
-            $return_second = $nav_bar->nav_bar_name;
-            $return_url = $nav_bar->href;
         }else{
             $nav_bar = new NavBar();
         }
@@ -60,11 +54,18 @@ class PrivilegeManagementController extends BaseController
         $out = [
             'data' => $data,
             'msg' => $return_msg,
-            'first' => $return_first,
-            'second' => $return_second,
-            'url' => $return_url,
+            'first' => $nav_bar->p_id,
+            'second' => $nav_bar->nav_bar_name,
+            'url' => $nav_bar->href,
+            'id' => $nav_bar->id,
         ];
         return $this->render('add',$out);
+    }
+
+    public function actionDelete(){
+        $params['nav_bar_id'] = Yii::$app->request->get('id',0);
+        NavBar::deleteAll(['id' => $params['nav_bar_id']]);
+        echo "<script>alert('删除选项卡成功');window.history.back(-1)</script>";
     }
 
     public function actionRole(){

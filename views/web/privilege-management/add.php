@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <form action="/privilege-management/add" method="post">
+                        <form action="/privilege-management/add?id=<?php echo $id;?>" method="post">
                             <p><?php echo $msg;?></p>
                             <table class="table table-striped" style="text-align: center;">
                                 <tr>

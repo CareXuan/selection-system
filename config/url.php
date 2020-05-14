@@ -20,6 +20,7 @@ return [
     //导航栏管理
     'privilege-management/index' => 'web/privilege-management/index',
     'privilege-management/add' => 'web/privilege-management/add',
+    'privilege-management/delete' => 'web/privilege-management/delete',
     'privilege-management/role' => 'web/privilege-management/role',
     'privilege-management/add-role' => 'web/privilege-management/add-role',
     'privilege-management/del-role' => 'web/privilege-management/del-role',

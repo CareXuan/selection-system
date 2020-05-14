@@ -1731,3 +1731,121 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1589333100.6549
     'REQUEST_TIME' => 1589333100
 ]
+2020-05-14 01:59:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "privilege-management/delete". in /mnt/f/selection-system/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('privilege-manag...', Array)
+#1 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /mnt/f/selection-system/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/f/selection-system/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/f/selection-system/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-05-14 01:59:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '27'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3oavg08kf7ekdo76c4pc80o2fb'
+    'user_name' => 'aaa'
+]
+
+$_SESSION = [
+    'db_connect' => false
+    'encode' => 'utf-8'
+    'WEB_DIR' => '/'
+    'DB_HOST' => null
+    'DB_NAME' => null
+    'DB_USER' => null
+    'DB_PASSWORD' => null
+    'DB_TYPE' => ''
+    'DB_USE_MASTER' => false
+    'Company' => false
+    'Production' => false
+    'DBENCODE' => ''
+    'Theme' => 'default'
+    'NavColor' => [
+        0 => '#b197fc'
+        1 => '#72C300'
+        2 => '#007AE6'
+        3 => '#009DB6'
+        4 => '#B5003F'
+        5 => '#EC9600'
+        6 => '#BB00D1'
+        7 => '#8156FF'
+        8 => '#72C300'
+        9 => '#007AE6'
+        10 => '#009DB6'
+        11 => '#B5003F'
+        12 => '#EC9600'
+        13 => '#BB00D1'
+        14 => '#8156FF'
+    ]
+    'DB_XML' => null
+    'TEMPLATES_DIR' => 'templates_v2.0'
+    'HTML_VERSION' => '15894208'
+    'Upload_Folder' => null
+    'XML_Folder' => null
+    'DB_AUTH_KEY' => ''
+    'XML_Path' => '/mnt/f/qbweb_linux/common/../xml//'
+    'intUsers' => null
+    'strDBLanguage' => ''
+    'strGlobalLanguage' => 'cn'
+    'arrLanguageList' => [
+        0 => ''
+    ]
+    'UP_FilePath' => '/mnt/f/qbweb_linux/uploadfiles//'
+    'qbwebproject' => null
+    'LastDebugTime' => 1589420832424
+    'mobileType' => 'web'
+    'LastMemo' => 0
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'PHPSESSID=3oavg08kf7ekdo76c4pc80o2fb; user_name=aaa'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:759/privilege-management/index'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:759'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => ''
+    'SERVER_PORT' => '759'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52680'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/mnt/f/selection-system/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/privilege-management/delete?id=27'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=27'
+    'SCRIPT_FILENAME' => '/mnt/f/selection-system/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1589421595.9772
+    'REQUEST_TIME' => 1589421595
+]

@@ -28,6 +28,7 @@
                                     <td><?php echo $aaa['href']; ?></td>
                                     <td>
                                         <a href="/privilege-management/add?id=<?php echo $aaa['id']?>" class="btn btn-success">修改</a>
+                                        <a href="/privilege-management/delete?id=<?php echo $aaa['id']?>" class="btn btn-danger">删除</a>
                                     </td>
                                 </tr>
                                 <?php
