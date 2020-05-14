@@ -17,7 +17,7 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $item['stu_number'];?></td>
-                                    <td><?php echo $class_arr[$item['class']];?></td>
+                                    <td><?php echo $item['reason'];?></td>
                                     <td>
                                         <a class="btn btn-success" style="color: white;" href="/add-check/check?id=<?php echo $item['id'];?>">审核</a>
                                     </td>

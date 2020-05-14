@@ -39,9 +39,11 @@
                                     <td>加分类型</td>
                                     <td>
                                         <select class="form-control" name="class">
-                                            <option value="1">德育</option>
-                                            <option value="2">智育</option>
-                                            <option value="3">体育</option>
+                                            <?php foreach ($class_data as $item){
+                                                ?>
+                                                <option value="<?php echo $item['id'];?>"><?php echo $item['reason']."({$item['grade']}分)" ?></option>
+                                            <?php
+                                            }?>
                                         </select>
                                     </td>
                                 </tr>

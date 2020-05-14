@@ -4,6 +4,7 @@
 namespace app\controllers\web;
 
 use app\models\GradeAdd;
+use app\models\GradeAddSet;
 use app\models\Student;
 use Yii;
 use app\models\FileHelper;
@@ -20,7 +21,9 @@ class AddApplyController extends BaseController
         $reason = Yii::$app->request->post('reason','');
         $class = Yii::$app->request->post('class');
         $msg = '';
+        $year = date('Y');
         $stu_data = Student::find()->asArray()->all();
+        $class_data = GradeAddSet::find()->where(['year' => $year])->asArray()->all();
 
         if ($number){
 
@@ -37,7 +40,7 @@ class AddApplyController extends BaseController
             $grade_add->picture = $pic_online;
             $grade_add->class = $class;
             $grade_add->status = 0;
-            $grade_add->year = date('Y');
+            $grade_add->year = $year;
             $result = $grade_add->save();
             if ($result){
                 $msg = '申请成功';
@@ -48,6 +51,7 @@ class AddApplyController extends BaseController
         $out = [
             'msg' => $msg,
             'stu_data' => $stu_data,
+            'class_data' => $class_data,
         ];
         return $this->render('character',$out);
     }
