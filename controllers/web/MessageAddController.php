@@ -3,6 +3,7 @@
 
 namespace app\controllers\web;
 
+use app\models\ColumnCategory;
 use app\models\FileHelper;
 use app\models\Grade;
 use app\models\GradeAdd;
@@ -17,59 +18,38 @@ class MessageAddController extends BaseController
 {
     /**
      * @return string
-     * @desc 分数录入
+     * @desc 德智体评分规则设定
      */
-    public function actionCharacter(){
-        $file_return_msg = '';
-        $manually_return_msg = '';
-        $number = Yii::$app->request->post('number','');
-        $class = Yii::$app->request->post('class','');
-        $name = Yii::$app->request->post('name','');
-        $basic = Yii::$app->request->post('basic','');
-        $hidden = Yii::$app->request->post('status');
+    public function actionSet(){
+        $character_headgrade = Yii::$app->request->post('character_headgrade',0);
+        $character_basic = Yii::$app->request->post('character_basic',0);
+        $intellectual_headgrade = Yii::$app->request->post('intellectual_headgrade',0);
+        $intellectual_basic = Yii::$app->request->post('intellectual_basic',0);
+        $sport_headgrade = Yii::$app->request->post('sport_headgrade',0);
+        $sport_basic = Yii::$app->request->post('sport_basic',0);
 
-        //文件导入
-        if (key_exists('file',$_FILES)){
-            $file_name = FileHelper::uploadByForm('file',['csv']);
-            if ($file_name){
-                $content = FileHelper::getContent($file_name);
-                foreach ($content as $item){
-                    $arr = explode(',',$item);
-                    $grade = new Grade();
-                    $grade->stu_id = $arr[0];
-                    $grade->class = $arr[1];
-                    $grade->name = $arr[2];
-                    $grade->basic = $arr[3];
-                    $grade->status = $hidden;
-                    $grade->save();
-                }
-                $file_return_msg = '导入成功';
-            }else{
-                $file_return_msg = '文件格式有误';
-            }
-        }
+        $year = date('Y');
 
-        //手动输入
-        if ($name && $basic && $number && $class){
-            $grade = new Grade();
-            $grade->stu_id = $number;
-            $grade->class = $class;
-            $grade->name = $name;
-            $grade->basic = $basic;
-            $grade->status = $hidden;
-            $result = $grade->save();
-            if ($result){
-                $manually_return_msg = '录入成功';
-            }else{
-                $manually_return_msg = '录入失败';
-            }
-        }
-
-        $out = [
-            'file_return_msg' => $file_return_msg,
-            'manually_return_msg' => $manually_return_msg,
-        ];
-        return $this->render('character',$out);
+        ColumnCategory::deleteAll(['year' => $year]);
+        $character = new ColumnCategory();
+        $intellectual = new ColumnCategory();
+        $sport = new ColumnCategory();
+        $character->type = 1;
+        $character->year = $year;
+        $character->headgrade = $character_headgrade;
+        $character->basic = $character_basic;
+        $intellectual->type = 2;
+        $intellectual->year = $year;
+        $intellectual->headgrade = $intellectual_headgrade;
+        $intellectual->basic = $intellectual_basic;
+        $sport->type = 1;
+        $sport->year = $year;
+        $sport->headgrade = $sport_headgrade;
+        $sport->basic = $sport_basic;
+        $character->save();
+        $intellectual->save();
+        $sport->save();
+        return $this->render('set');
     }
 
     /**

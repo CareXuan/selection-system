@@ -11,7 +11,7 @@ class AddCheckController extends BaseController
 {
     //待审核
     public function actionUnaudited(){
-        $data = GradeAdd::find()->where(['=','status',0])->orderBy('id desc')->asArray()->all();
+        $data = GradeAdd::find()->where(['and',['=','status',0],['!=','class',100]])->orderBy('id desc')->asArray()->all();
         $class_arr = [
             1 => '德育',
             2 => '智育',
