@@ -46,7 +46,7 @@ class CalculationController extends Controller
         }
         //清除当前学年所有分数重新计算
         Grade::deleteAll(['year' => $year]);
-        //德育加分
+        //加减分项
         $add_grade_sql = "select a.stu_number,b.grade,b.type from
                         (select stu_number,class from grade_add where year = 2020 and status = 1) a
                         join
@@ -81,9 +81,9 @@ class CalculationController extends Controller
         foreach ($add_arr as $key => $value){
             $final_grade = new FinalGrade();
             $final_grade->stu_number = $key;
-            $final_grade->character_grade = (($character_basic + $value['character_add']) < $character_headgrade) ? ($character_basic + $value['character_add']) : $character_headgrade;
-            $final_grade->intellectual_grade = (($intellectual_basic + $value['intellectual_add']) < $intellectual_headgrade) ? ($intellectual_basic + $value['intellectual_add']) : $intellectual_headgrade;
-            $final_grade->sport_grade = (($sport_basic + $value['sport_add']) < $sport_headgrade) ? ($sport_basic + $value['sport_add']) : $sport_headgrade;
+            $final_grade->character_grade = (($character_basic + $value['character_add']) * $character_headgrade / 100) < $character_headgrade ? (($character_basic + $value['character_add']) * $character_headgrade / 100) : $character_headgrade;
+            $final_grade->intellectual_grade = (($intellectual_basic + $value['intellectual_add']) * $intellectual_headgrade / 100) < $intellectual_headgrade ? (($intellectual_basic + $value['intellectual_add']) * $intellectual_headgrade / 100) : $intellectual_headgrade;
+            $final_grade->sport_grade = (($sport_basic + $value['sport_add']) * $sport_headgrade / 100) < $sport_headgrade ? (($sport_basic + $value['sport_add']) * $sport_headgrade / 100) : $sport_headgrade;
             $final_grade->save();
         }
     }
