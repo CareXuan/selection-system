@@ -13,9 +13,21 @@ use yii\web\Controller;
 class PrivilegeManagementController extends BaseController
 {
     public function actionIndex(){
-        $all_data = NavBar::find()->asArray()->all();
+        $page = Yii::$app->request->get('page',1);
+        $pagesize = 10;
+        $offset = ($page - 1) * $pagesize;
+        $cnt = NavBar::find()->count();
+        $all_page = ceil($cnt / $pagesize);
+        if ($page > $all_page - 1){
+            $page = $all_page - 1;
+        }elseif($page < 1){
+            $page = 1;
+        }
+        $all_data = NavBar::find()->limit($pagesize)->offset($offset)->asArray()->all();
         $out = [
             'all_data' => $all_data,
+            'page' => $page,
+            'all_page' => ceil($cnt / $pagesize),
         ];
         return $this->render('index',$out);
     }

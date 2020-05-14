@@ -35,6 +35,15 @@
                             }
                             ?>
                         </table>
+                        <div style="text-align: center;">
+                            <a href="/privilege-management/index?page=<?php echo $page-1;?>"><</a>
+                            <?php for ($i = 1;$i <= $all_page;$i++){
+                                ?>
+                                <a href="/privilege-management/index?page=<?php echo $i;?>"><?php echo $i;?></a>
+                            <?php
+                            } ?>
+                            <a href="/privilege-management/index?page=<?php echo $page+1;?>">></a>
+                        </div>
                     </div>
                 </div>
             </div>
