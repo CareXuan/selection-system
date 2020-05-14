@@ -11,7 +11,7 @@
  Target Server Version : 50729
  File Encoding         : 65001
 
- Date: 14/05/2020 14:53:15
+ Date: 14/05/2020 15:49:13
 */
 
 SET NAMES utf8mb4;
@@ -26,27 +26,27 @@ CREATE TABLE `authority`  (
   `role_id` int(11) NOT NULL,
   `nav_id` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 80 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 142 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of authority
 -- ----------------------------
-INSERT INTO `authority` VALUES (64, 1, 2);
-INSERT INTO `authority` VALUES (65, 1, 5);
-INSERT INTO `authority` VALUES (66, 1, 19);
-INSERT INTO `authority` VALUES (67, 1, 21);
-INSERT INTO `authority` VALUES (68, 1, 13);
-INSERT INTO `authority` VALUES (69, 1, 11);
-INSERT INTO `authority` VALUES (70, 1, 12);
-INSERT INTO `authority` VALUES (71, 1, 4);
-INSERT INTO `authority` VALUES (72, 1, 9);
-INSERT INTO `authority` VALUES (73, 1, 10);
-INSERT INTO `authority` VALUES (74, 1, 17);
-INSERT INTO `authority` VALUES (75, 1, 18);
-INSERT INTO `authority` VALUES (76, 1, 20);
-INSERT INTO `authority` VALUES (77, 1, 8);
-INSERT INTO `authority` VALUES (78, 1, 29);
-INSERT INTO `authority` VALUES (79, 1, 30);
+INSERT INTO `authority` VALUES (126, 1, 31);
+INSERT INTO `authority` VALUES (127, 1, 32);
+INSERT INTO `authority` VALUES (128, 1, 19);
+INSERT INTO `authority` VALUES (129, 1, 21);
+INSERT INTO `authority` VALUES (130, 1, 13);
+INSERT INTO `authority` VALUES (131, 1, 11);
+INSERT INTO `authority` VALUES (132, 1, 12);
+INSERT INTO `authority` VALUES (133, 1, 4);
+INSERT INTO `authority` VALUES (134, 1, 9);
+INSERT INTO `authority` VALUES (135, 1, 10);
+INSERT INTO `authority` VALUES (136, 1, 17);
+INSERT INTO `authority` VALUES (137, 1, 18);
+INSERT INTO `authority` VALUES (138, 1, 20);
+INSERT INTO `authority` VALUES (139, 1, 8);
+INSERT INTO `authority` VALUES (140, 1, 29);
+INSERT INTO `authority` VALUES (141, 1, 30);
 
 -- ----------------------------
 -- Table structure for bedroom
@@ -138,11 +138,14 @@ CREATE TABLE `column_category`  (
   `headgrade` int(20) NULL DEFAULT NULL COMMENT '分数上限（百分比）',
   `basic` int(10) NULL DEFAULT NULL COMMENT '基础分',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of column_category
 -- ----------------------------
+INSERT INTO `column_category` VALUES (7, 1, '2020', 0, 0);
+INSERT INTO `column_category` VALUES (8, 2, '2020', 0, 0);
+INSERT INTO `column_category` VALUES (9, 1, '2020', 0, 0);
 
 -- ----------------------------
 -- Table structure for grade
@@ -229,7 +232,7 @@ INSERT INTO `nav_bar` VALUES (1, 0, '结果展示', '');
 INSERT INTO `nav_bar` VALUES (4, 15, '导航栏管理', '/privilege-management/index');
 INSERT INTO `nav_bar` VALUES (6, 0, '信息导入', '');
 INSERT INTO `nav_bar` VALUES (7, 0, '加分申请', '');
-INSERT INTO `nav_bar` VALUES (8, 28, '德智体评分', '/message-add/character');
+INSERT INTO `nav_bar` VALUES (8, 28, '德智体评分设置', '/message-add/set');
 INSERT INTO `nav_bar` VALUES (9, 15, '角色管理', '/privilege-management/role');
 INSERT INTO `nav_bar` VALUES (10, 15, '用户管理', '/privilege-management/user');
 INSERT INTO `nav_bar` VALUES (11, 14, '未审核申请', '/add-check/unaudited');
@@ -245,8 +248,8 @@ INSERT INTO `nav_bar` VALUES (21, 6, '班级信息', '/message-add/class');
 INSERT INTO `nav_bar` VALUES (28, 0, '德智体综合测评', '');
 INSERT INTO `nav_bar` VALUES (29, 28, '可申请项目设置', '/message-add/grade-add-set');
 INSERT INTO `nav_bar` VALUES (30, 28, '错误减分', '/message-add/demerit');
-INSERT INTO `nav_bar` VALUES (31, 1, '个人评分', '');
-INSERT INTO `nav_bar` VALUES (32, 1, '班级评分', '');
+INSERT INTO `nav_bar` VALUES (31, 1, '个人评分', '/best-class/single');
+INSERT INTO `nav_bar` VALUES (32, 1, '班级评分', '/best-class/class');
 
 -- ----------------------------
 -- Table structure for role
@@ -305,6 +308,6 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, 'aaa', '123', 1);
+INSERT INTO `user` VALUES (1, 'root', 'admin', 1);
 
 SET FOREIGN_KEY_CHECKS = 1;
