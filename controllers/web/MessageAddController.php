@@ -5,6 +5,7 @@ namespace app\controllers\web;
 
 use app\models\FileHelper;
 use app\models\Grade;
+use app\models\GradeAdd;
 use app\models\GradeAddSet;
 use app\models\StuClass;
 use app\models\Student;
@@ -14,7 +15,10 @@ use yii\web\Controller;
 
 class MessageAddController extends BaseController
 {
-    //德育分数
+    /**
+     * @return string
+     * @desc 分数录入
+     */
     public function actionCharacter(){
         $file_return_msg = '';
         $manually_return_msg = '';
@@ -68,6 +72,10 @@ class MessageAddController extends BaseController
         return $this->render('character',$out);
     }
 
+    /**
+     * @return string
+     * @desc 学生信息录入
+     */
     public function actionStudent(){
         $file_return_msg = "";
         if (key_exists('file',$_FILES)){
@@ -98,6 +106,10 @@ class MessageAddController extends BaseController
         return $this->render("student",$out);
     }
 
+    /**
+     * @return string
+     * @desc 班级信息录入
+     */
     public function actionClass(){
         $file_return_msg = "";
         if (key_exists('file',$_FILES)){
@@ -126,6 +138,10 @@ class MessageAddController extends BaseController
         return $this->render("class",$out);
     }
 
+    /**
+     * @return string
+     * @desc 加分可申请项目设置界面
+     */
     public function actionGradeAddSet(){
         $page = Yii::$app->request->get('page',1);
         $pagesize = 10;
@@ -145,6 +161,11 @@ class MessageAddController extends BaseController
         ];
         return $this->render('grade-add-set',$out);
     }
+
+    /**
+     * @return string
+     * @desc 可申请项目设置添加修改
+     */
     public function actionGradeAddSetAdd(){
         $params['type'] = Yii::$app->request->post('type');
         $params['reason'] = Yii::$app->request->post('reason');
@@ -182,5 +203,32 @@ class MessageAddController extends BaseController
             'id' => $nav_bar->id,
         ];
         return $this->render('grade-add-set-add',$out);
+    }
+
+    public function actionDemerit(){
+        $number = Yii::$app->request->post('number');
+        $reason = Yii::$app->request->post('reason','');
+        $msg = '';
+        $stu_data = Student::find()->asArray()->all();
+
+        if ($number){
+            $grade_add = new GradeAdd();
+            $grade_add->stu_number = $number;
+            $grade_add->reason = $reason;
+            $grade_add->class = 100;
+            $grade_add->status = 0;
+            $grade_add->year = date('Y');
+            $result = $grade_add->save();
+            if ($result){
+                $msg = '添加成功';
+            }else{
+                $msg = '添加失败，请重试';
+            }
+        }
+        $out = [
+            'msg' => $msg,
+            'stu_data' => $stu_data,
+        ];
+        return $this->render('demerit',$out);
     }
 }

@@ -11,7 +11,7 @@
  Target Server Version : 50729
  File Encoding         : 65001
 
- Date: 30/04/2020 16:20:26
+ Date: 14/05/2020 14:53:15
 */
 
 SET NAMES utf8mb4;
@@ -26,25 +26,27 @@ CREATE TABLE `authority`  (
   `role_id` int(11) NOT NULL,
   `nav_id` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 49 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 80 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of authority
 -- ----------------------------
-INSERT INTO `authority` VALUES (35, 1, 2);
-INSERT INTO `authority` VALUES (36, 1, 5);
-INSERT INTO `authority` VALUES (37, 1, 4);
-INSERT INTO `authority` VALUES (38, 1, 9);
-INSERT INTO `authority` VALUES (39, 1, 10);
-INSERT INTO `authority` VALUES (40, 1, 8);
-INSERT INTO `authority` VALUES (41, 1, 19);
-INSERT INTO `authority` VALUES (42, 1, 21);
-INSERT INTO `authority` VALUES (43, 1, 13);
-INSERT INTO `authority` VALUES (44, 1, 11);
-INSERT INTO `authority` VALUES (45, 1, 12);
-INSERT INTO `authority` VALUES (46, 1, 17);
-INSERT INTO `authority` VALUES (47, 1, 18);
-INSERT INTO `authority` VALUES (48, 1, 20);
+INSERT INTO `authority` VALUES (64, 1, 2);
+INSERT INTO `authority` VALUES (65, 1, 5);
+INSERT INTO `authority` VALUES (66, 1, 19);
+INSERT INTO `authority` VALUES (67, 1, 21);
+INSERT INTO `authority` VALUES (68, 1, 13);
+INSERT INTO `authority` VALUES (69, 1, 11);
+INSERT INTO `authority` VALUES (70, 1, 12);
+INSERT INTO `authority` VALUES (71, 1, 4);
+INSERT INTO `authority` VALUES (72, 1, 9);
+INSERT INTO `authority` VALUES (73, 1, 10);
+INSERT INTO `authority` VALUES (74, 1, 17);
+INSERT INTO `authority` VALUES (75, 1, 18);
+INSERT INTO `authority` VALUES (76, 1, 20);
+INSERT INTO `authority` VALUES (77, 1, 8);
+INSERT INTO `authority` VALUES (78, 1, 29);
+INSERT INTO `authority` VALUES (79, 1, 30);
 
 -- ----------------------------
 -- Table structure for bedroom
@@ -126,23 +128,42 @@ CREATE TABLE `class_grade`  (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for column_category
+-- ----------------------------
+DROP TABLE IF EXISTS `column_category`;
+CREATE TABLE `column_category`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` tinyint(3) NULL DEFAULT NULL COMMENT '类别',
+  `year` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '学年',
+  `headgrade` int(20) NULL DEFAULT NULL COMMENT '分数上限（百分比）',
+  `basic` int(10) NULL DEFAULT NULL COMMENT '基础分',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of column_category
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for grade
 -- ----------------------------
 DROP TABLE IF EXISTS `grade`;
 CREATE TABLE `grade`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `stu_id` int(11) NULL DEFAULT NULL,
-  `class` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `basic` int(10) NOT NULL,
-  `status` tinyint(5) NULL DEFAULT NULL,
+  `school_id` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '学院ID',
+  `major_id` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '专业ID',
+  `class_id` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '班级ID',
+  `stu_id` int(10) NULL DEFAULT NULL COMMENT '学号',
+  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '姓名',
+  `year` int(10) NULL DEFAULT NULL COMMENT '学年',
+  `class_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '课程名称',
+  `grade` float NULL DEFAULT NULL COMMENT '分数',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of grade
 -- ----------------------------
-INSERT INTO `grade` VALUES (1, 161203311, '软工1603', '刘懿萱', 10, 1);
 
 -- ----------------------------
 -- Table structure for grade_add
@@ -150,17 +171,44 @@ INSERT INTO `grade` VALUES (1, 161203311, '软工1603', '刘懿萱', 10, 1);
 DROP TABLE IF EXISTS `grade_add`;
 CREATE TABLE `grade_add`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `stu_number` int(10) NULL DEFAULT NULL,
-  `class` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `reason` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `picture` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `status` tinyint(2) NULL DEFAULT NULL,
+  `stu_number` int(10) NULL DEFAULT NULL COMMENT '学号',
+  `class` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '申请类型',
+  `reason` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '申请理由',
+  `picture` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '申请图片',
+  `status` tinyint(2) NULL DEFAULT NULL COMMENT '申请状态',
+  `year` int(20) NULL DEFAULT NULL COMMENT '学年',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of grade_add
 -- ----------------------------
+INSERT INTO `grade_add` VALUES (1, 16120331, '1', '123', '/var/www/html/check_pic/QQ截图20200513091611.png', NULL, NULL);
+INSERT INTO `grade_add` VALUES (2, 16120331, '1', '1231', '/var/www/html/check_pic/QQ截图20200513091611.png', 1, NULL);
+INSERT INTO `grade_add` VALUES (3, 111, '1', '132', '/var/www/html/check_pic/QQ截图20200513091611.png', 0, NULL);
+INSERT INTO `grade_add` VALUES (4, 111111122, '3', '123', '/var/www/html/check_pic/QQ截图20200513091611.png', 0, NULL);
+INSERT INTO `grade_add` VALUES (5, 123, '1', '123', '/var/www/html/check_pic/QQ截图20200513094702.png', 0, NULL);
+INSERT INTO `grade_add` VALUES (6, 161203311, '100', 'aaa', NULL, 100, 2020);
+INSERT INTO `grade_add` VALUES (7, 123456, '100', 'aabb', NULL, 0, 2020);
+
+-- ----------------------------
+-- Table structure for grade_add_set
+-- ----------------------------
+DROP TABLE IF EXISTS `grade_add_set`;
+CREATE TABLE `grade_add_set`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` tinyint(3) NULL DEFAULT NULL COMMENT '加分项类型',
+  `reason` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '加分项具体名称',
+  `year` int(10) NULL DEFAULT NULL COMMENT '对应学年',
+  `grade` float NULL DEFAULT NULL COMMENT '加分量',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of grade_add_set
+-- ----------------------------
+INSERT INTO `grade_add_set` VALUES (1, 1, 'bbbb', 2020, 1.5);
+INSERT INTO `grade_add_set` VALUES (2, 2, 'aaaa', 2020, 3);
 
 -- ----------------------------
 -- Table structure for nav_bar
@@ -172,21 +220,18 @@ CREATE TABLE `nav_bar`  (
   `nav_bar_name` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '导航栏名称',
   `href` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'url链接',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of nav_bar
 -- ----------------------------
-INSERT INTO `nav_bar` VALUES (1, 0, '最佳班级评选', '');
-INSERT INTO `nav_bar` VALUES (2, 1, '最佳班级', '/best-class/ranking');
-INSERT INTO `nav_bar` VALUES (3, 0, '权限管理', '');
-INSERT INTO `nav_bar` VALUES (4, 3, '导航栏管理', '/privilege-management/index');
-INSERT INTO `nav_bar` VALUES (5, 1, '必要条件', '/best-class/necessary');
+INSERT INTO `nav_bar` VALUES (1, 0, '结果展示', '');
+INSERT INTO `nav_bar` VALUES (4, 15, '导航栏管理', '/privilege-management/index');
 INSERT INTO `nav_bar` VALUES (6, 0, '信息导入', '');
 INSERT INTO `nav_bar` VALUES (7, 0, '加分申请', '');
-INSERT INTO `nav_bar` VALUES (8, 6, '德育分数', '/message-add/character');
-INSERT INTO `nav_bar` VALUES (9, 3, '角色管理', '/privilege-management/role');
-INSERT INTO `nav_bar` VALUES (10, 3, '用户管理', '/privilege-management/user');
+INSERT INTO `nav_bar` VALUES (8, 28, '德智体评分', '/message-add/character');
+INSERT INTO `nav_bar` VALUES (9, 15, '角色管理', '/privilege-management/role');
+INSERT INTO `nav_bar` VALUES (10, 15, '用户管理', '/privilege-management/user');
 INSERT INTO `nav_bar` VALUES (11, 14, '未审核申请', '/add-check/unaudited');
 INSERT INTO `nav_bar` VALUES (12, 14, '已审核申请', '/add-check/audited');
 INSERT INTO `nav_bar` VALUES (13, 7, '加分申请', '/add-apply/character');
@@ -197,6 +242,11 @@ INSERT INTO `nav_bar` VALUES (18, 15, '班级信息管理', '/system-management/
 INSERT INTO `nav_bar` VALUES (19, 6, '学生信息', '/message-add/student');
 INSERT INTO `nav_bar` VALUES (20, 15, '班级干部管理', '/system-management/cadre-admin');
 INSERT INTO `nav_bar` VALUES (21, 6, '班级信息', '/message-add/class');
+INSERT INTO `nav_bar` VALUES (28, 0, '德智体综合测评', '');
+INSERT INTO `nav_bar` VALUES (29, 28, '可申请项目设置', '/message-add/grade-add-set');
+INSERT INTO `nav_bar` VALUES (30, 28, '错误减分', '/message-add/demerit');
+INSERT INTO `nav_bar` VALUES (31, 1, '个人评分', '');
+INSERT INTO `nav_bar` VALUES (32, 1, '班级评分', '');
 
 -- ----------------------------
 -- Table structure for role
@@ -214,27 +264,6 @@ CREATE TABLE `role`  (
 -- ----------------------------
 INSERT INTO `role` VALUES (1, '管理员', 1);
 INSERT INTO `role` VALUES (2, '录入员', 1);
-
--- ----------------------------
--- Table structure for stu_grade
--- ----------------------------
-DROP TABLE IF EXISTS `stu_grade`;
-CREATE TABLE `stu_grade`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `stu_id` int(50) NULL DEFAULT NULL,
-  `deyufenshu` float NULL DEFAULT NULL,
-  `zhiyufenshu` float NULL DEFAULT NULL,
-  `tiyufenshu` float NULL DEFAULT NULL,
-  `jidian` float NULL DEFAULT NULL,
-  `xuejichuli` int(20) NULL DEFAULT NULL,
-  `jilvchufen` int(20) NULL DEFAULT NULL,
-  `fujiafeng` float NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of stu_grade
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for student

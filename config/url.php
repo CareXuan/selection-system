@@ -14,8 +14,8 @@ return [
     'test' => 'web/index/test',
 
     //最佳班级
-    'best-class/ranking' => 'web/best-class/ranking',
-    'best-class/necessary' => 'web/best-class/necessary',
+//    'best-class/ranking' => 'web/best-class/ranking',
+//    'best-class/necessary' => 'web/best-class/necessary',
 
     //导航栏管理
     'privilege-management/index' => 'web/privilege-management/index',
@@ -34,6 +34,7 @@ return [
     'message-add/class' => 'web/message-add/class',
     'message-add/grade-add-set' => 'web/message-add/grade-add-set',
     'message-add/grade-add-set-add' => 'web/message-add/grade-add-set-add',
+    'message-add/demerit' => 'web/message-add/demerit',
 
     //登录相关
     'user/login' => 'web/user/login',

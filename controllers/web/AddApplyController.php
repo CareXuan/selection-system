@@ -4,18 +4,23 @@
 namespace app\controllers\web;
 
 use app\models\GradeAdd;
+use app\models\Student;
 use Yii;
 use app\models\FileHelper;
 use yii\web\Controller;
 
 class AddApplyController extends BaseController
 {
-    //德育加分申请
+    /**
+     * @return string
+     * @desc 加分申请
+     */
     public function actionCharacter(){
         $number = Yii::$app->request->post('number');
         $reason = Yii::$app->request->post('reason','');
         $class = Yii::$app->request->post('class');
         $msg = '';
+        $stu_data = Student::find()->asArray()->all();
 
         if ($number){
 
@@ -32,6 +37,7 @@ class AddApplyController extends BaseController
             $grade_add->picture = $pic_online;
             $grade_add->class = $class;
             $grade_add->status = 0;
+            $grade_add->year = date('Y');
             $result = $grade_add->save();
             if ($result){
                 $msg = '申请成功';
@@ -40,7 +46,8 @@ class AddApplyController extends BaseController
             }
         }
         $out = [
-            'msg' => $msg
+            'msg' => $msg,
+            'stu_data' => $stu_data,
         ];
         return $this->render('character',$out);
     }
