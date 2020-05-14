@@ -32,6 +32,8 @@ return [
     'message-add/character' => 'web/message-add/character',
     'message-add/student' => 'web/message-add/student',
     'message-add/class' => 'web/message-add/class',
+    'message-add/grade-add-set' => 'web/message-add/grade-add-set',
+    'message-add/grade-add-set-add' => 'web/message-add/grade-add-set-add',
 
     //登录相关
     'user/login' => 'web/user/login',

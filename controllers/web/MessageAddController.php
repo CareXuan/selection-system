@@ -5,6 +5,7 @@ namespace app\controllers\web;
 
 use app\models\FileHelper;
 use app\models\Grade;
+use app\models\GradeAddSet;
 use app\models\StuClass;
 use app\models\Student;
 use app\models\Test;
@@ -123,5 +124,63 @@ class MessageAddController extends BaseController
             'return_msg' => $file_return_msg,
         ];
         return $this->render("class",$out);
+    }
+
+    public function actionGradeAddSet(){
+        $page = Yii::$app->request->get('page',1);
+        $pagesize = 10;
+        $offset = ($page - 1) * $pagesize;
+        $cnt = GradeAddSet::find()->count();
+        $all_page = ceil($cnt / $pagesize);
+        if ($page > $all_page - 1){
+            $page = $all_page - 1;
+        }elseif($page < 1){
+            $page = 1;
+        }
+        $data = GradeAddSet::find()->limit($pagesize)->offset($offset)->asArray()->all();
+        $out = [
+            'all_data' => $data,
+            'page' => $page,
+            'all_page' => ceil($cnt / $pagesize),
+        ];
+        return $this->render('grade-add-set',$out);
+    }
+    public function actionGradeAddSetAdd(){
+        $params['type'] = Yii::$app->request->post('type');
+        $params['reason'] = Yii::$app->request->post('reason');
+        $params['grade'] = Yii::$app->request->post('grade');
+        $params['id'] = Yii::$app->request->get('id',0);
+        $params['check'] = Yii::$app->request->post('check',0);
+
+        if ($params['id']){
+            $nav_bar = GradeAddSet::getById($params['id']);
+        }else{
+            $nav_bar = new GradeAddSet();
+        }
+
+        if ($params['check']){
+            $nav_bar->type = $params['type'];
+            $nav_bar->reason = $params['reason'];
+            $nav_bar->grade = $params['grade'];
+            $nav_bar->year = date('Y');
+            $result = $nav_bar->save();
+            if ($result){
+                $return_msg = '添加成功';
+            }else{
+                $return_msg = '添加失败，请咨询管理员!';
+            }
+        }else{
+            $return_msg = '';
+        }
+        $data = GradeAddSet::find()->asArray()->all();
+        $out = [
+            'data' => $data,
+            'msg' => $return_msg,
+            'type' => $nav_bar->type,
+            'reason' => $nav_bar->reason,
+            'grade' => $nav_bar->grade,
+            'id' => $nav_bar->id,
+        ];
+        return $this->render('grade-add-set-add',$out);
     }
 }
