@@ -77,7 +77,7 @@ class PrivilegeManagementController extends BaseController
     public function actionDelete(){
         $params['nav_bar_id'] = Yii::$app->request->get('id',0);
         NavBar::deleteAll(['id' => $params['nav_bar_id']]);
-        echo "<script>alert('删除选项卡成功');window.history.back(-1)</script>";
+        echo "<script>alert('删除选项卡成功');window.history.back(-1);</script>";
     }
 
     public function actionRole(){
@@ -218,5 +218,9 @@ class PrivilegeManagementController extends BaseController
             echo "<script>alert('删除失败')</script>";
         }
         echo "<script>self.location=document.referrer;</script>";
+    }
+
+    public function actionGradeCalculation(){
+        return $this->render('grade-calculation');
     }
 }

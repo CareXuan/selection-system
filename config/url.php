@@ -27,6 +27,7 @@ return [
     'privilege-management/user' => 'web/privilege-management/user',
     'privilege-management/add-user' => 'web/privilege-management/add-user',
     'privilege-management/del-user' => 'web/privilege-management/del-user',
+    'privilege-management/grade-calculation' => 'web/privilege-management/grade-calculation',
 
     //信息导入
     'message-add/set' => 'web/message-add/set',
@@ -35,6 +36,7 @@ return [
     'message-add/grade-add-set' => 'web/message-add/grade-add-set',
     'message-add/grade-add-set-add' => 'web/message-add/grade-add-set-add',
     'message-add/demerit' => 'web/message-add/demerit',
+    'message-add/dzt' => 'web/message-add/dzt',
 
     //登录相关
     'user/login' => 'web/user/login',

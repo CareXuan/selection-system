@@ -63,7 +63,7 @@ class MessageAddController extends BaseController
             if ($file_name){
                 $content = FileHelper::getContent($file_name);
                 foreach ($content as $item){
-                    $arr = explode(',',$item);
+                    $arr = explode(',',trim($item));
                     $student = new Student();
                     $student->stu_id = $arr[0];
                     $student->stu_name = $arr[1];
@@ -97,7 +97,7 @@ class MessageAddController extends BaseController
             if ($file_name){
                 $content = FileHelper::getContent($file_name);
                 foreach ($content as $item){
-                    $arr = explode(',',$item);
+                    $arr = explode(',',trim($item));
                     $class = new StuClass();
                     $class->college_id = $arr[0];
                     $class->college_name = $arr[1];
@@ -116,6 +116,39 @@ class MessageAddController extends BaseController
             'return_msg' => $file_return_msg,
         ];
         return $this->render("class",$out);
+    }
+
+    /**
+     * @return string
+     * @desc 班级信息录入
+     */
+    public function actionDzt(){
+        $class = Yii::$app->request->post('class');
+        $file_return_msg = "";
+        if (key_exists('file',$_FILES)){
+            $file_name = FileHelper::uploadByForm('file',['csv']);
+            if ($file_name){
+                $content = FileHelper::getContent($file_name);
+                foreach ($content as $item){
+                    $arr = explode(',',trim($item));
+                    $grade = new Grade();
+                    $grade->stu_id = $arr[0];
+                    $grade->name = $arr[1];
+                    $grade->year = date('Y');
+                    $grade->class_name = $arr[2];
+                    $grade->grade = $arr[3];
+                    $grade->class_name = $class;
+                    $grade->save();
+                }
+                $file_return_msg = '导入成功';
+            }else{
+                $file_return_msg = '文件格式有误';
+            }
+        }
+        $out = [
+            'return_msg' => $file_return_msg,
+        ];
+        return $this->render("dzt",$out);
     }
 
     /**

@@ -86,5 +86,7 @@ class CalculationController extends Controller
             $final_grade->sport_grade = (($sport_basic + $value['sport_add']) * $sport_headgrade / 100) < $sport_headgrade ? (($sport_basic + $value['sport_add']) * $sport_headgrade / 100) : $sport_headgrade;
             $final_grade->save();
         }
+
+        echo "<script>alert('德智体分数计算成功');window.history.back(-1);</script>";
     }
 }
