@@ -21,5 +21,10 @@ class TestXuanController extends Controller
 
   public function actionDb(){
       print_r(NavBar::find()->where(['p_id' => 0])->asArray()->all());
+    $result = Test::find()
+      ->select("*")
+      ->asArray()
+      ->all();
+    print_r($result);
   }
 }

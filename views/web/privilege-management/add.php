@@ -7,13 +7,13 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <form action="/privilege-management/add" method="post">
+                        <form action="/privilege-management/add?id=<?php echo $id;?>" method="post">
                             <p><?php echo $msg;?></p>
                             <table class="table table-striped" style="text-align: center;">
                                 <tr>
                                     <td>一级标签名</td>
                                     <td>
-                                        <select class="form-control" name="first_tag">
+                                        <select id="first_tag" class="form-control" name="first_tag">
                                             <option value="0">all</option>
                                             <?php
                                             foreach ($data as $val){
@@ -50,8 +50,7 @@
     </div>
 </section>
 
+
 <script>
-    $(document).ready(function () {
-        $('')
-    })
+
 </script>
