@@ -1,0 +1,1 @@
+模板加载页，在项目启动时加载bootstrap和jquery模板库
