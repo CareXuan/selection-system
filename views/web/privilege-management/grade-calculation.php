@@ -1,6 +1,6 @@
 <section class="section">
     <h1 class="section-header">
-        <div>实时排名</div>
+        <div>分数计算</div>
     </h1>
     <div class="row mt-5">
         <div class="col-12">
