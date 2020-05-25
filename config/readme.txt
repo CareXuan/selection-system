@@ -1,0 +1,1 @@
+配置文件目录，console与web文件为基础php与http的php启动配置，test文件为测试环境启动配置，db与test_db文件分别为正式与测试环境数据库配置，url文件保存url路由配置

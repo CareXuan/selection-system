@@ -1,0 +1,3 @@
+views文件夹保存MVC设计模式中视图层的文件。
+首先layouts中为复用组件文件路径，其中content-footer，content-header，main，sidebar文件分别对应底栏，顶栏，主体和侧栏，main文件加载web文件夹中的视图进行显示。
+web文件夹中保存各模块视图文件，web文件夹中的各文件夹与controllers文件夹中的文件文件名相对应，在控制器层文件进行视图调用的时候会自动寻找对应名字的文件显示在主体位置。
